@@ -1,0 +1,123 @@
+<html>
+<head>
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+header {
+background-color: #F7DC6F;
+padding: 10px;
+text-align: center;
+}
+
+nav {
+display: flex;
+justify-content: center;
+background-color: #444;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+padding: 14px 20px;
+display: block;
+transition: background-color 0.3s;
+}
+
+nav a:hover {
+background-color: #555;
+}
+h2 {
+font-size:20 ;
+color : black ;
+text-align: center ;
+font-style: italic;
+}
+.sb {
+text-align:center ;
+font-size: 25px ;
+color: white ;
+font-style: italic ;
+font-family: arial black ;
+}
+</style>
+<script>
+function mostrarFechaYHora() {
+var fechaActual = new Date();
+
+var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+var fechaFormateada = fechaActual.toLocaleDateString('es-ES', options);
+
+var horaFormateada = fechaActual.toLocaleTimeString('es-ES');
+
+document.getElementById('fecha').innerHTML = 'Fecha: ' + fechaFormateada;
+document.getElementById('hora').innerHTML = 'Hora: ' + horaFormateada;
+}
+
+// Actualizar cada segundo
+setInterval(mostrarFechaYHora, 1000);
+
+// Mostrar la fecha y hora al cargar la página
+mostrarFechaYHora();
+</script>
+
+
+</head>
+<body style="background-color:#F7DC6F;">
+
+
+<header>
+<img src="https://esports.as.com/2023/01/04/bonus/kings-league/Kings-League_1644445553_1097383_1440x600.jpg" width ="850" height="400" >
+<h1><font color="#ECF0F1 " > DRAFT KINGS LEAGUE</font></h1>
+</header>
+
+<nav>
+<a href="index.html">Inicio</a>
+<a href="patrocinadores.html">Patrocinadores</a>
+<a href="contacto.html">Contacto</a>
+</nav>
+
+<p class="sb">NUESTROS PATROCINADORES</p>
+
+<hr>
+<br><br>
+<table cellpadding="10px">
+<tr>
+<td><img src="https://apostamos.es/wp-content/uploads/2018/05/en-Sportium.png" width="600" height="300" border="0"></td>
+<td><img src="data:image/png;base64,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 " width="600" height="300" border="0"></td>
+</tr>
+
+<tr>
+<td align="justify">Sportium, Casa de Apuestas número 1 en España, es una compañía parte del Grupo CIRSA, multinacional de juego y ocio líder en España y Latinoamérica, grupo que cuenta con más de 40 años de experiencia en el sector. En 2016, Sportium inició su internacionalización en Latinoamérica operando en Panamá, y, en 2017, comenzó la actividad en Colombia con un ambicioso plan de expansión que se suma a su liderazgo en España. Como parte de su compromiso con la integridad en el deporte, la compañía colabora con la Dirección General de la Ordenación del Juego (DGOJ) y forma parte de la Comisión Nacional para combatir la Manipulación de las Competiciones Deportivas y el Fraude en las Apuestas (CONFAD), así como de la International Betting Integrity Association.</td>
+<td align="justify">Desde el humilde comienzo como un restaurante pequeño hasta hoy, cuando nos sentimos orgullosos de habernos convertido en uno de los principales minoristas de servicio de comida del mundo con más de 36,000 restaurantes en más de 100 países.</td>
+</tr>
+<tr>
+<td><img src="https://cdn.britannica.com/94/193794-050-0FB7060D/Adidas-logo.jpg" width="600" height="300" </td>
+<td><img src="https://thefoodtech.com/wp-content/uploads/2020/05/grupo-bimbo.jpeg" width="600" height="300"></td>
+</tr>
+<tr>
+<td align="justify">Adidas es una multinacional alemana fundada en 1949 que fabrica calzado, ropa y material deportivo. Con un equipo que supera los 57.000 empleados encargados de fabricar más de 900 millones de productos anuales, Adidas lidera actualmente la economía global como uno de los mayores proveedores de artículos deportivos.</td>
+<td align="justify">Grupo Bimbo es la empresa de panificación líder y más grande del mundo y un jugador relevante en snacks. Cuenta con 217 panaderías y otras plantas y más de 1,500 centros de ventas estratégicamente localizados en 34 países de América, Europa, Asia y África. Grupo Bimbo fabrica más de 9,000 productos y tiene una de las redes de distribución más grandes del mundo, con más de 57,000 rutas y más de 149,000 colaboradores.</td>
+</tr>
+</table>
+
+
+<br><br><br><br><br><br>
+<center>
+<div id="fecha"></div>
+<div id="hora"></div>
+</center>
+
+
+
+</body>
+
+
+</html>

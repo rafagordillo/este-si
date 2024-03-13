@@ -1,0 +1,116 @@
+<html lang ="es">
+<head>
+
+<title>INICIO</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+header {
+background-color: #F7DC6F;
+padding: 10px;
+text-align: center;
+}
+
+nav {
+display: flex;
+justify-content: center;
+background-color: #444;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+padding: 14px 20px;
+display: block;
+transition: background-color 0.3s;
+}
+
+nav a:hover {
+background-color: #555;
+}
+h2 {
+font-size:20 ;
+color : black ;
+text-align: center ;
+font-style: italic;
+}
+.sb {
+text-align:center ;
+font-size: 25px ;
+color: black ;
+font-style: italic ;
+font-family: arial black ;
+}
+</style>
+<script>
+function mostrarFechaYHora() {
+var fechaActual = new Date();
+
+var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+var fechaFormateada = fechaActual.toLocaleDateString('es-ES', options);
+
+var horaFormateada = fechaActual.toLocaleTimeString('es-ES');
+
+document.getElementById('fecha').innerHTML = 'Fecha: ' + fechaFormateada;
+document.getElementById('hora').innerHTML = 'Hora: ' + horaFormateada;
+}
+
+// Actualizar cada segundo
+setInterval(mostrarFechaYHora, 1000);
+
+// Mostrar la fecha y hora al cargar la página
+mostrarFechaYHora();
+</script>
+
+</head>
+
+<body style="background-color:#F7DC6F ;">
+
+<header>
+<img src="https://esports.as.com/2023/01/04/bonus/kings-league/Kings-League_1644445553_1097383_1440x600.jpg" width ="850" height="400" >
+<h1><font color="#ECF0F1" > EMPRESA DE DRAFT DE LA KINGS LEAGUE </font></h1>
+</header>
+
+<nav>
+<a href="index.html">Inicio</a>
+<a href="patrocinadores.html">Patrocinadores</a>
+<a href="contacto.html">Contacto</a>
+</nav>
+
+
+
+<p class= "sb" > ESTO ES UNA PÁGINA WEB CREADA PARA LA GENTE QUE QUIERA PARTICIPAR EN LA KINGS LEGUE, LO UNICO QUE TIENES QUE HACER ES PASAR EL DRAFT</p>
+
+<hr>
+
+<table border="0" cellspacing="30" cellpadding="0">
+<tr>
+<td> <img src="https://mipequeñafabrica.com/wp-content/uploads/sites/1/2023/08/trofeos-kings-league-kings-league-escudo-pio-0.jpg" width="600" height="400" border="10" ></td>
+<td height="30" align="justify"><font color="#333"><font-size="2000">Pio FC es el nombre del equipo de la Kings League de la streamer mexicana Rivers. Es una gran aficionada al fútbol y será la única mujer presidente de la competición. El nombre viene de cómo llama a su comunidad, los Pollitos.</font-size></font></td>
+</tr>
+<tr>
+<td align="justify">Es el equipo «Villano», como ellos mismos se autoproclaman en redes sociales.
+Además, destaca por haber conseguido al jugador con la cláusula más alta del primer split de la Kings League: Édgar Álvaro.
+Spursito, uno de los presidentes más carismáticos y más involucrados en la Kings League lo tiene claro, este proyecto va a ir a más y este su equipo no lo venderá a día de hoy, ni en un futuro cercano, porque es su pasión.
+ </td>
+<td ><img src="https://mipequeñafabrica.com/wp-content/uploads/sites/1/2023/08/trofeos-kings-league-kings-league-escudo-rayo-de-barcelona-0.jpg" width="600" height="350" border="10"></td>
+</tr>
+<tr>
+<td ><img src="https://mipequeñafabrica.com/wp-content/uploads/sites/1/2023/08/trofeos-kings-league-kings-league-escudo-los-troncos-0.jpg" width="600" height="400" border="10"></td>
+<td align="justify"> Los Troncos FC es el original nombre de equipo de Perxitaa para la Kings League. Aunque por su nombre pueden ser tratados como tales, la idea del streamer es estar en todo lo alto en la liga. </td>
+</tr>
+</table>
+<br><br><br><br>
+<center>
+<div id="fecha"></div>
+<div id="hora"></div>
+</center>
+
+</body>
